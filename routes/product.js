@@ -7,4 +7,6 @@ router.get('/:productId', require("../controllers/getProduct"));
 
 router.post('/', require("../controllers/createNewProduct"));
 
+/*router.patch('/:productId', require("../controllers/EditProduct"))*/
+
 module.exports = router;
