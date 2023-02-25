@@ -41,15 +41,6 @@ class  product {
         return queryRes.rows;
     };
 
-    /*static EditProduct = async (productUuid) =>{
-        const pgClient = await newClient ();
-        const queryRes = await pgClient.query (
-            "UPDATE products SET products WHERE product_uuid = ($1)", [productUuid]
-        );
-        
-        pgClient.end();  
-        return queryRes.rows;
-    };  */
 
     static createNewProduct = async (newProduct) => {
         const pgClient = await newClient();
